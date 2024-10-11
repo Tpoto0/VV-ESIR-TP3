@@ -26,3 +26,22 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
+1. 
+Empty string:
+- Case: ""
+
+Single character:
+- Open symbol: "{", "[", "("
+- Close symbol: "}", "]", ")"
+
+Balanced pairs:
+- A simple balanced string: "{}", "[]", "()"
+- Multiple balanced pairs: "{[]}", "([])"
+- Nested balanced pairs: "{[()]}", "({[]})"
+
+Unbalanced cases:
+- Mismatched open and close: "{]", "(}", "["
+- Extra open or extra close: "}{", "[(])"
+
+2. 
+To evaluate the statement coverage of the test cases that we designed, we use the tool in Visual Studio Code that tests code coverage. The analysis told us that our code was covered at 96% but when we looked at the lines of the codes which were declared as covered we saw that in reality we were already testing these lines of code.We concluded that our tests covered all of the possibilities.

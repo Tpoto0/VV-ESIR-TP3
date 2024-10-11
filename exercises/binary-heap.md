@@ -40,3 +40,51 @@ Use the following steps to design the test suite:
 Use the project in [tp3-heap](../code/tp3-heap) to complete this exercise.
 
 ## Answer
+
+1. 
+Method: pop()
+
+Characteristics
+Heap size:
+- Block 1: Empty heap (invalid input, expect assertion error)
+- Block 2: Single-element heap
+- Block 3: Multiple-element heap
+
+Heap structure (if not empty):
+- Block 1: Balanced heap
+- Block 2: Unbalanced heap
+
+Method: peek()
+
+Characteristics
+Heap size:
+- Block 1: Empty heap (invalid input, expect assertion error)
+- Block 2: Non-empty heap
+
+Top element value (for non-empty heap):
+- Block 1: Minimum element (already at root)
+- Block 2: Other elements (not at root)
+
+Method: push(T element)
+
+Characteristics
+Heap size:
+- Block 1: Empty heap
+- Block 2: Non-empty heap
+
+Element relationship:
+- Block 1: Element smaller than the current root
+- Block 2: Element larger than the current root
+- Block 3: Element already in the heap (duplicate values)
+
+Method: count()
+Characteristics
+Heap size:
+- Block 1: Empty heap
+- Block 2: Single-element heap
+- Block 3: Multiple-element heap
+
+2. 
+After evaluating the test cases coverage and adding some tests to improve the initial coverage, we get a score of 97%.To do this, we launch the test coverage with VSCode, this indicates the score and the areas where the code passes or does not pass. It is thanks to this visualization that we can see that the coverage is almost perfect.
+
+3. 

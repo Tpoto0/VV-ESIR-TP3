@@ -53,3 +53,51 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
 
+1. 
+isValidDate(int day, int month, int year) :
+Characteristics : 
+- Checks the boundaries for the year, month, and day.
+- Takes into account whether it's a leap year when determining the days in February.
+- The leap year check is shared with the isLeapYear method.
+Blocks :
+- Verifies that the year is at least 1, the month is between 1 and 12, and the day is at least 1.
+- Uses an array to store the number of days for each month, adjusting for February in leap years.
+
+isLeapYear(int year) :
+Characteristics : 
+- Determines if a year is a leap year based on divisibility rules.
+- This leap year calculation logic is used in the isValidDate method.
+Blocks :
+- Divisible by 4 but not by 100, or divisible by 400.
+
+nextDate() :
+Characteristics : 
+- Calculates the next day, month, and year.
+- Leap year check
+Blocks :
+- Adjusts the day, and if necessary, the month or year
+
+previousDate() :
+Characteristics : 
+- Calculates the previous day, month, and year.
+- Leap year check
+Blocks :
+- Adjusts the day, and if necessary, the month or year
+
+compareTo() :
+Characteristics : 
+- Check if the date is null
+- Compares two Date objects by there year, months and day to determine their relative order
+Blocks :
+- Compares the year fields of the two dates first
+- If the years are the same, it compares the month fields
+- If both the year and month fields are the same, it finally compares the day fields
+
+2. 
+After evaluating the test cases coverage and adding some tests to improve the initial coverage, we get a score of 92%.
+To do this, we launch the test coverage with VSCode, this indicates the score and the areas where the code passes or does not pass. It is thanks to this visualization that we can create new tests to test the areas of non-coverage.
+
+3. 
+There isn't any predicate that uses more than two boolean operators in that class.
+
+4. 
